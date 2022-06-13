@@ -1,6 +1,6 @@
 const TelegramBot = require('node-telegram-bot-api');
-const TOKEN = '766582943:AAHhqcVcWZcvF0Zl195_bDKrtIv6HVJECx4';
-const debug = require('./helpers');
+const TOKEN = '5584542810:AAH85gxAb_kJeU7zIoGNYE4k1hlJJzA9TFE';
+// const debug = require('./helpers');
 
 let timeOut = 10;
 const bot = new TelegramBot(TOKEN, {
@@ -71,12 +71,12 @@ bot.on('message', (msg) => {
 // обработка команд бота идет на onText
 bot.onText(/\/start/, msg => {
     const { id } = msg.chat;
-    bot.sendMessage(id, '');
+    bot.sendMessage(id, 'уже все началось');
 })
 
 bot.onText(/\/help (.+)/, msg => {
     const { id } = msg.chat;
-    bot.sendMessage(id, '');
+    bot.sendMessage(id, 'ничего нет');
 })
 
 // inline keybord
