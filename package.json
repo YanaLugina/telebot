@@ -1,0 +1,17 @@
+{
+  "name": "telega",
+  "version": "1.0.0",
+  "description": "bot for telegram",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "YanaLugina",
+  "license": "MIT",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.57.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
